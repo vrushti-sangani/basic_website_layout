@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0;
+}
+img{
+    display: block;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    padding: auto;
+}
+.header{
+    background-color: yellowgreen;
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+}
+.head{
+    background-color: darkmagenta;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    height: 200px;
+}
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul li{
+    float: left;
+    border-right: 1px solid whitesmoke;
+}
+.navbar li:last-child{
+    border-right: none;
+}
+li a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    padding: 15px 25px;
+    color: white;
+}
+li a:hover{
+    background-color: rgb(50, 49, 49);
+}
+li .dropdown{
+    display: inline-block;
+}
+.drop-con{
+    display: none;
+    position: absolute;
+    background-color: rgb(189, 189, 189);
+    color: whitesmoke;
+    min-width: 200px;
+    z-index: 1;
+}
+.drop-con a{
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+.drop-con a:hover{
+    background-color: rgb(231, 230, 230);
+}
+.dropdown:hover .drop-con{
+    display: block;
+}
+
+/* part 4 */
+.about{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.about .side{
+    min-width: 30%;
+    background-color: rgb(222, 220, 220);
+    padding: 20px 30px;
+    max-height: 990px;
+    overflow-y: scroll;
+}
+.side img{
+    margin: 7px;
+}
+.about img{
+    margin: 10px;
+}
+.about .main{
+    min-width: 70%;
+    background-color: whitesmoke;
+    padding: 20px 30px;
+}
+
+/* part 5 */
+footer{
+    background-color: rgb(227, 233, 233);
+    color: black;
+    font-size: 25px;
+    padding: 24px;
+    text-align: center;
+}
+
+/* media query */
+@media screen and (max-width:700px){
+    .about{
+        flex-direction: column;
+    }
+    .navbar ul li{
+        float: none;
+        border: none;
+        text-align: center;
+    }
+    
+}
